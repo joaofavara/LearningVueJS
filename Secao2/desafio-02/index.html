@@ -1,0 +1,19 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <div>
+        <button v-on:click="exibiAlerta">Exibi Alerta!</button>
+    </div>
+
+    <div>
+        <input type="text" v-on:keyup="salvaValor1">
+        <p>{{ valor1 }}</p>
+    </div>
+
+    <div>
+        <input type="text" v-on:keydown.enter="salvaValor2">
+        <p>{{ valor2 }}</p>
+    </div>
+</div>
+
+<script src="app.js"></script>

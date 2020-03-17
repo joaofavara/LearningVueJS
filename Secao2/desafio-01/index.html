@@ -1,0 +1,16 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <p>Usando VueJS - {{ nome }} {{ idade }}</p>
+    <p>{{ tripleAge() }}</p>
+    <p>{{ random() }}</p>
+    <div>
+        <img v-bind:src="image" height="400">
+    </div>
+    <div>
+        <input type="text" v-bind:value="nome">
+    </div>
+
+</div>
+
+<script src="app.js"></script>
